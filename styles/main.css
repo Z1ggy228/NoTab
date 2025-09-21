@@ -1,0 +1,281 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 51px;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:active {
+  opacity: 1;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+
+  font-size: 18px;
+
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1270px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.container--small {
+  max-width: 1030px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ======================================================= Common section ======================================================= */
+
+.common {
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+.common__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.common__row--reverse {
+  flex-direction: row-reverse;
+}
+
+.common__image {
+  margin-right: 30px;
+}
+
+.common__body {
+  max-width: 410px;
+}
+
+.common__title {
+  margin-bottom: 15px;
+}
+
+/* ======================================================= Header ======================================================= */
+
+.header,
+.logo,
+.header__login-button {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  column-gap: 110px;
+}
+
+.logo {
+  column-gap: 10px;
+}
+
+.header__login-button {
+  column-gap: 15px;
+}
+
+.header__login-button span {
+  text-decoration: underline;
+}
+
+/* ======================================================= Welcome ======================================================= */
+
+.welcome {
+  padding-bottom: 50px;
+}
+
+.welcome__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 85px 80px 0;
+}
+
+.welcome__body {
+  margin-right: 30px;
+}
+
+.welcome__title {
+  margin-bottom: 130px;
+
+  font-size: clamp(35px, 4.4vw, 64px);
+  line-height: 1.09;
+}
+
+.welcome__description {
+  position: relative;
+
+  padding-left: 112px;
+
+  font-size: 20px;
+}
+
+.welcome__description::before {
+  content: '';
+
+  position: absolute;
+  left: -33px;
+  bottom: 60px;
+  z-index: -5;
+
+  width: 140px;
+  height: 4px;
+
+  background-color: #ffffff;
+
+  rotate: 120deg;
+}
+
+.welcome__description::after {
+  content: '';
+
+  position: absolute;
+  left: -15px;
+  bottom: 20px;
+  z-index: -10;
+
+  width: 125px;
+  aspect-ratio: 1;
+
+  background-color: rgba(96, 92, 234, 0.5);
+
+  filter: blur(75px);
+}
+
+.welcome__image {
+  border-radius: 57px;
+}
+
+.welcome__cta {
+  padding-right: 60px;
+}
+
+.cta__title {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.cta__links-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+/* ======================================================= Mission ======================================================= */
+
+.mission {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 85px 120px 0;
+}
+
+.mission__image {
+  position: absolute;
+  left: -310px;
+  top: 0;
+  z-index: -1;
+
+  margin-right: 30px;
+
+  border-radius: 75px;
+
+  rotate: 90deg;
+  translate: 0 -14%;
+}
+
+.mission__body {
+  max-width: 325px;
+  margin-left: auto;
+}
+
+.mission__title {
+  margin-bottom: 33px;
+}
+
+/* ======================================================= Scanner ======================================================= */
+
+.scanner {
+  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url('./../images/bg-scanner.jpg');
+  background-size: cover;
+}
+
+/* ======================================================= Code ======================================================= */
+
+.code {
+  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%),
+    url('./../images/bg-code.jpg') center/cover no-repeat;
+}
+
+/* ======================================================= Footer ======================================================= */
+
+.footer {
+  padding: 100px 0 60px 0;
+}
+
+.footer__cta {
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: 125px;
+}
+
+.footer__cta .cta__links-list {
+  column-gap: 60px;
+}
+
+.footer__cta .cta__title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__row > * {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer__contact span {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 900;
+}
+
+.footer__copyright {
+  font-weight: 900;
+}
+
+.footer__links {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 900;
+}
